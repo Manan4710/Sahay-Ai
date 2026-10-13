@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sahay – AI Chat Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="logo">स</span>
+        <span class="brand-name">Sahay</span>
+      </div>
+      <button class="new-chat" id="newChat">+ New chat</button>
+      <nav class="history" id="history" aria-label="Chat history"></nav>
+      <button class="theme-btn" id="themeBtn">Switch theme</button>
+    </aside>
+
+    <div class="scrim" id="scrim"></div>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        <span class="topbar-title" id="topTitle">New chat</span>
+      </header>
+
+      <section class="messages" id="messages" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <h1>What are you stuck on?</h1>
+          <p>Ask a question, paste an error, or get something explained simply.</p>
+          <div class="chips" id="chips">
+            <button class="chip">Explain pointers in C++ with an example</button>
+            <button class="chip">Write a simple HTML page for a college club</button>
+            <button class="chip">What is the difference between an array and a vector?</button>
+            <button class="chip">Make me a 7-day plan to learn DSA</button>
+          </div>
+        </div>
+      </section>
+
+      <form class="composer" id="composer">
+        <textarea id="input" rows="1" placeholder="Type your message. Enter to send, Shift+Enter for a new line." aria-label="Message"></textarea>
+        <button type="submit" id="sendBtn" aria-label="Send message">Send</button>
+      </form>
+      <p class="footnote">Sahay can make mistakes. Check important answers.</p>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
