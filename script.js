@@ -187,5 +187,4 @@ try {
 } catch { setTheme("light"); }
 
 // ---------- Start ----------
-load();
-if (!chats.length) newChat(); else { activeId = chats[0].id; renderAll(); }
+   newChat();
