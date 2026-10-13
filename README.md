@@ -1,5 +1,7 @@
 # Sahay – AI Chat Assistant
 
+Live demo: https://sahay-ai-assistant.netlify.app
+
 A ChatGPT-style chat website. Frontend: HTML, CSS, JavaScript. Backend: one Netlify Function that calls the Google Gemini API.
 
 ## Features
